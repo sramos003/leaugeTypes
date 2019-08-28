@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Sticky top</a>
+    </nav>
+    <main>
+        <!--Choose an opton-->
+        <section id="optionSect" class="mt-5">
+            <!--Background imagae applied to container-->
+            <div>
+                <!--Header-->
+                <div class="text-center">
+                    <h1> Welcome</h1>
+                    <hr>
+                </div>
+                <div class="row mt-5"></div>
+                <!--Under Head-->
+                <div class="text-center">
+                    <!--Sub-->
+                    <div>
+                        <div class="row mt-2"></div>
+                        <a href="#" id="teamRegister" class="btn btn-info">Register a new team</a>
+                        <div class="row mt-2"></div>
+                        <a href="teamList.html" class="btn btn-success">Find a team</a>
+
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <!--Register-->
+        <section id="registerSect">
+            <div class="container">
+                <div class="mt-3">
+                    <div class="text-center">
+                        <h1 id="registerHeaderName"> Lets get started</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Form Section Editable-->
+                    <div class="col-md-4">
+                        <div class="row mt-2"></div>
+                        <!--Bottom Logo generation from dropdown pick-->
+                        <div class="mt-5 ml-5">
+                            <div class="imgHolderC">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Mid section image-->
+                    <div class="col-md-4">
+                        <div class="imgHolderV">
+                        </div>
+                    </div>
+                    <!--Right form section to complete-->
+                    <div clas="col-md-4 bg-secondary">
+                        <div class="row mt-2"></div>
+                        <div class="row">
+                            <div class="col-md-11">
+                                <div class="text-right">
+                                    <!--Reset button-->
+                                    <a class="fas fa-undo"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2"></div>
+                        <legend>Team Registration</legend>
+                        <hr>
+                        <form>
+                            <!--Form to serialize information-->
+                            <input type="text" id="teamName" placeholder="teamName">
+                            <div class="row mt-2"></div>
+                            <input type="text" id="managerName" placeholder="managerName">
+                            <div class="row mt-2"></div>
+                            <input type="text" id="managerPhone" placeholder="managerPhone">
+                            <div class="row mt-2"></div>
+                            <input type="text" id="managerEmail" placeholder="managerEmail">
+                            <div class="row mt-2"></div>
+                            <input id="managerInfo" type="checkbox"><label class="text-dark"> I am the team manager</label>
+                            <div class="row mt-2"></div>
+                            <!--Hard coded (2)values for now-->
+                            <select>
+								<option value="NRG">NRG Sports</option>
+								<option value="TSM">Team Solo Mid </option>
+							</select>
+                            <hr>
+                            <div class="row mt-2"></div>
+                            <!--Business Logic potion-->
+                            <label>Age Lock</label>
+                            <div class="row"></div>
+                            <input type="radio" value="true" name="ageLock" class="ml-2"><label>Yes</label>
+                            <input type="radio" value="false" name="ageLock" class="ml-2" checked><label>No</label>
+                            <div class="hidden">
+                                <input type="text" placeholder="minAge">
+                                <div class="row mt-2"></div>
+                                <input type="text" placeholder="maxAge">
+                            </div>
+                            <div class="row mt-2"></div>
+                            <hr>
+                            <!---->
+                            <label>Maximum Members</label>
+                            <div class="row mt-2"></div>
+                            <input type="text" placeholder="maxTeamNum">
+                            <hr>
+                            <!---->
+                            <div class="row mt-2"></div>
+                            <label>Gender Lock</label>
+                            <div class="row mt-2"></div>
+                            <input type="radio" value="toggle" name="genLock" class="ml-2" checked><label>None</label>
+                            <input type="radio" value="toggle" name="genLock" class="ml-2"><label>Male</label>
+                            <input type="radio" value="toggle" name="genLock" class="ml-2"><label>Female</label>
+                            <!---->
+                            <div class="row mt-2"></div>
+                            <a id="registerTeam" href="teamList.html" class="btn btn-info">Register my Team</a>
+                            <a href="index.html" class="btn btn-danger">Cancel</a>
+                        </form>
+                        <div>
+                            <p id="errorMsgId"></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+        </section>
+        <footer>
+            <div class="text-center">
+                <div>
+                    <h6>
+                        Sponsers..
+                    </h6>
+                    <hr>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/scripts/registerScript.js"></script>
+</body>
+
+</html>

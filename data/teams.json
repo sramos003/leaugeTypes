@@ -1,0 +1,72 @@
+[{
+        "TeamId": 1,
+        "TeamName": "Gritty Troopers",
+        "League": "NRG",
+        "ManagerName": "Becky T. Thomas",
+        "ManagerPhone": "860-342-7845",
+        "ManagerEmail": "bTT@NRG.Team.com",
+        "MaxTeamMembers": 4,
+        "MinMemberAge": 0,
+        "MaxMemberAge": 50,
+        "TeamGender": "Any",
+        "Members": [{
+                "MemberId": 1,
+                "Email": "wiaFooTab@gmail.com",
+                "MemberName": "Giovanni Rico",
+                "ContactName": "Gio R.",
+                "Age": 25,
+                "Gender": "Male",
+                "Phone": "860-115-8146"
+            },
+            {
+                "MemberId": 2,
+                "Email": "RotamcLiv@gmail.com",
+                "MemberName": "Antoni Balbus",
+                "ContactName": "Balbo",
+                "Age": 27,
+                "Gender": "Male",
+                "Phone": "212-452-9874"
+            },
+            {
+                "MemberId": 3,
+                "Email": "Roberts544@hotmail.com",
+                "MemberName": "Mia T. Roberts",
+                "ContactName": "M.Roberts",
+                "Age": 35,
+                "Gender": "Female",
+                "Phone": "860-425-8174"
+            }
+        ]
+    },
+    {
+        "TeamId": 2,
+        "TeamName": "Instant Street Porcupines",
+        "League": "TSM",
+        "ManagerName": "Natalie Plyers",
+        "ManagerPhone": "817-555-5454",
+        "ManagerEmail": "Natalie214@aol.com",
+        "MinAge": 0,
+        "MaxAge": 50,
+        "MaxTeamMembers": 6,
+        "TeamGender": "Any",
+        "Members": [{
+                "MemberId": 4,
+                "Email": "Natalie214@aol.com",
+                "MemberName": "Elisha Plyers",
+                "ContactName": "Natalie Plyers",
+                "Age": 10,
+                "Gender": "Male",
+                "Phone": "817-555-5454"
+            },
+            {
+                "MemberId": 5,
+                "Email": "Natalie214@aol.com",
+                "MemberName": "Ezra Plyers",
+                "ContactName": "Natalie Plyers",
+                "Age": 15,
+                "Gender": "Male",
+                "Phone": "817-555-5454"
+            }
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+.imgHolder {
+    width: 90%;
+    background-position: center;
+    color: #ffffff;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/download.png')
+}
+
+.imgHolderV {
+    width: 90%;
+    background-position: center;
+    color: #ffffff;
+    min-height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/pix-vertical-placeholder.jpg')
+}
+
+.imgHolderC {
+    width: 80%;
+    border-radius: 50%;
+    background-position: center;
+    color: #ffffff;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/download.png')
+}
+
+.hidden {
+    display: none;
+}

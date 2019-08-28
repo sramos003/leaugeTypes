@@ -1,0 +1,21 @@
+[{
+        "Name": "T. SoloMid",
+        "Code": "TSM",
+        "Description": "Regional American eSports organization that was initally founded as a 'Leauge of Legends' community forum fielding professional competitions, moved outwards into multi-genre content creation and competition."
+    },
+    {
+        "Name": "T. Liquid",
+        "Code": "LIQ",
+        "Description": "Multi-regional eSports orginazation that is based in the Netherlands and is venturing into multi-genre content management,creation, and competition."
+    },
+    {
+        "Name": "NRG eSports",
+        "Code": "NRG",
+        "Description": "Competitive Californian based organization whose roster consists of team members whose background speaks volumes to their skill in all types of content."
+    },
+    {
+        "Name": "Complexity Gaming",
+        "Code": "COM",
+        "Description": "European based eSports organization that is overseen and backed by the Owner of the Dallas Cowboys founded in 2003."
+    }
+]
