@@ -99,7 +99,6 @@ function isThereAnyGenderChangeConflicts(newTeamGender, team) {
             return true; // found a conflict!
         }
     }
-
     return false; // no conflicts
 }
 
@@ -404,7 +403,7 @@ app.delete("/api/teams/:id", function(req, res) {
     //logOneTeam(match);
     // Note:  even if we didn't find them, send a 200 because they are gone
     res.status(200).send();
-})
+});
 
 // ADD A MEMBER TO A TEAM
 app.post("/api/teams/:id/members", urlencodedParser, function(req, res) {
@@ -549,7 +548,7 @@ app.delete("/api/teams/:teamid/members/:memberid", urlencodedParser, function(re
     console.log("Found team!");
 
     // find existing member on the team
-    let foundAt = team.Members.findIndex(m => m.MemberId == req.body.memberid);
+    let foundAt = team.Members.findIndex(m => m.MemberId == memberId);
 
     let match = null;
     // delete the member if found

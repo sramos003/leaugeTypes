@@ -1,3 +1,17 @@
+* {
+    font-family: 'Times New Roman', Times, serif
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 1;
+}
+
 .imgHolder {
     width: 90%;
     background-position: center;
@@ -5,21 +19,25 @@
     min-height: 250px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/images/download.png')
+    background-image: url('/public/images/download.png')
 }
 
 .imgHolderV {
-    width: 90%;
+    width: 100%;
     background-position: center;
     color: #ffffff;
     min-height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/images/pix-vertical-placeholder.jpg')
+    background-image: url('/images/pix-vertical-placeholder.jpg');
 }
 
-.imgHolderC {
-    width: 80%;
+.banner1 {
+    background-image: linear-gradient(to top, rgba(224, 27, 43, 0.3), rgba(130, 142, 186, .09)), url('/images/bannerOne.jpg');
+}
+
+.imgHolderR {
+    width: 100%;
     border-radius: 50%;
     background-position: center;
     color: #ffffff;
@@ -29,6 +47,85 @@
     background-image: url('/images/download.png')
 }
 
+.borderProp {
+    border-left: 3px solid gray
+}
+
+.redText {
+    color: red;
+}
+
+.imgHolderC {
+    width: 85%;
+    border-radius: 50%;
+    background-position: center;
+    color: black;
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/download.png')
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .hidden {
     display: none;
+}
+
+.focusColor {
+    background-color: rgba(195, 195, 195, 0.2)
+}
+
+.errorRed {
+    background-color: rgba(210, 0, 0, 0.1)
+}
+
+.largePoint {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.parallax {
+    /* Full height */
+    height: 250px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stadium {
+    /* The image used */
+    background-image: linear-gradient(to top, rgba(224, 27, 43, 0.3), rgba(130, 142, 186, .09)), url('/images/Open.jpg');
+}
+
+.second {
+    background-image: linear-gradient(to top, rgba(65, 0, 176, 0.3), rgba(130, 142, 186, .09)), url('/images/Second.jpg');
+}
+
+.teams {
+    background-image: linear-gradient(to top, rgba(224, 27, 43, 0.3), rgba(130, 142, 186, .09)), url('/images/Teams.jpg');
+}
+
+.register {
+    background-image: linear-gradient(to top, rgba(65, 0, 176, 0.3), rgba(130, 142, 186, .09)), url('/images/register.png');
+}
+
+.parallaxReg {
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stadiumTwo {
+    /* The image used */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .09)), url('/images/Open2.jpg');
 }

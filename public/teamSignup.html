@@ -13,95 +13,89 @@
     <title>Hello, world!</title>
 </head>
 
-<body>
-    <nav class="navbar sticky-top navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Sticky top</a>
+<body class="parallaxReg stadiumTwo">
+    <nav class="navbar sticky-top navbar-dark bg-dark border-bottom border-white">
+        <a class="navbar-brand border-bottom border-white" href="index.html">eLeague</a>
     </nav>
-    <section>
-        <div class="container">
-            <div class="mt-3">
+    <section class="shadow-lg rounded my-2 mx-2">
+        <div class="container-fluid">
+            <!--Top Header-->
+            <div class="mt-3 bg-light">
                 <div class="text-center">
-                    <h1> Complete your signup for "teamName"</h1>
+                    <h1> Complete your signup</h1>
                     <hr>
                 </div>
             </div>
+            <!--Start of Row-->
             <div class="row">
                 <!--Left form section to complete-->
-                <div class="col-md-4">
+                <div class="col-md-5 my-2 bg-light rounded">
                     <div class="row mt-2"></div>
-                    <div class="row">
-                        <div class="col-md-11">
-                            <div class="text-right">
-                                <!--Reset button-->
-                                <a class="fas fa-undo"></a>
+                    <legend class="text-center">Registration</legend>
+                    <hr>
+                    <form id="signupForm">
+                        <!--Form to serialize information-->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label>Your Name</label>
+                                <div class="row"></div>
+                                <input type="text" id="memberName" name="membername" class="rounded mb-2" placeholder="John Smith">
+                                <div class="row"></div>
+                                <label>Your Number</label>
+                                <div class="row"></div>
+                                <input type="text" id="memberPhone" name="phone" class="rounded mb-2 num" maxlength="15" placeholder="Your Number">
+                                <div class="row"></div>
+                                <label>Your Email</label>
+                                <div class="row"></div>
+                                <input type="text" id="memberEmail" name="email" class="rounded mb-2" placeholder="John@Smith.Com">
+                                <div class="row"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row"></div>
+                                <label>Age</label>
+                                <div class="row"></div>
+                                <input type="text" id="age" name="age" class="rounded mb-2 num" maxlength="3" placeholder="Age">
+                                <div class="row"></div>
+                                <label>Nick Name</label>
+                                <div class="row"></div>
+                                <input type="text" name="contactname" class="rounded mb-2" placeholder="Jonny">
+                                <div class="row"></div>
+                                <label>Gender</label>
+                                <div class="row"></div>
+                                <input type="radio" value="Male" name="gender" class="ml-2"><label>Male</label>
+                                <input type="radio" value="Female" name="gender" class="ml-2"><label>Female</label>
                             </div>
                         </div>
-                    </div>
-                    <div class="row mt-2"></div>
-                    <legend>Team Registration</legend>
-                    <hr>
-                    <form>
-                        <!--Form to serialize information-->
-                        <input type="text" placeholder="teamName" readonly>
-                        <div class="row mt-2"></div>
-                        <input type="text" placeholder="teamLeauge" readonly>
-                        <div class="row mt-2"></div>
                         <hr>
-                        <input type="text" placeholder="personName">
-                        <div class="row mt-2"></div>
-                        <input type="text" placeholder="personPhone">
-                        <div class="row mt-2"></div>
-                        <input type="text" placeholder="person-Email">
-                        <div class="row mt-2"></div>
-                        <hr>
-                        <div class="row mt-2"></div>
-                        <!--Business Logic potion-->
-                        <div class="row"></div>
-                        <label>Age: </label>
-                        <div class="row mt-2"></div>
-                        <input type="text" placeholder="age">
-                        <div class="row mt-2"></div>
-                        <label>nickName: </label>
-                        <div class="row mt-2"></div>
-                        <input type="text" placeholder="prefferedName">
-                        <div class="row mt-2"></div>
-                        <label>Maximum Members: </label>
-                        <div class="row mt-2"></div>
-                        <input type="text" placeholder="maxTeamNum">
-                        <div class="row mt-2"></div>
-                        <label>Gender: </label>
-                        <div class="row mt-2"></div>
-                        <input type="radio" value="toggle" name="genLock" class="ml-2"><label>Male</label>
-                        <input type="radio" value="toggle" name="genLock" class="ml-2"><label>Female</label>
+                        <!--Spacer-->
+                        <div id="teamCard" class="card my-2 mx-3 shadow-lg border border-secondary">
+                            <h4 id="teamLeague" class="card-header bg-secondary text-white shadow-sm border-bottom border-dark"></h4>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div id="bodyContainer" class="col-md-8">
+                                        <h4 id="bodyTop" class="card-text">Hello</h4>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="imgHolderC"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!---->
                         <div class="row mt-2"></div>
-                        <a href="teamList.html" class="btn btn-info">Join Team</a>
-                        <a href="index.html" class="btn btn-danger">Cancel</a>
+                        <a href="teamList.html" id="submit" class="btn btn-info mb-3">Join Team</a>
+                        <a href="index.html" class="btn btn-danger mb-3">Cancel</a>
                     </form>
                 </div>
                 <!--Mid section image-->
-                <div class="col-md-4">
-                    <div class="imgHolderV">
+                <div class="col-md-3 mt-3">
+                    <div class="imgHolderV banner1 border border-secondary rounded ">
                     </div>
                 </div>
-                <!--Form Section Editable-->
-                <div class="col-md-4">
-                    <div class="mt-5">
-                        <h5>Manager Info</h5>
-                        <hr>
-                        <input type="text" placeholder="managerName">
-                        <div class="row mt-2"></div>
-                        <input type="text" placeholder="managerNumber">
-                        <div class="row mt-2"></div>
-                        <input type="text" placeholder="managerEmail">
-                    </div>
+                <div class="col-md-4 bg-light rounded">
                     <div class="row mt-2"></div>
-                    <!--Bottom Logo generation from dropdown pick-->
-                    <div class="mt-5 ml-5">
-                        <div class="imgHolderC">
-                        </div>
-                    </div>
-                    <div class="mt-5 ml-5">
+                    <div class="mt-5">
                         <h5>Member List: </h5>
                         <table class="table table-hover">
                             <thead class="thead-dark">
@@ -150,7 +144,7 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="/scripts/signupScript.js"></script>
