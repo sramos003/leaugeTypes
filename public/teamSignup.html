@@ -29,52 +29,61 @@
             <!--Start of Row-->
             <div class="row">
                 <!--Left form section to complete-->
-                <div class="col-md-5 my-2 bg-light rounded">
+                <div class="col-md-5 my-2 backColor rounded shadow-lg">
                     <div class="row mt-2"></div>
-                    <legend class="text-center">Registration</legend>
+                    <div class="text-center">
+                        <legend>Registration</legend>
+                        <small><i>*All Fields Required</i></small>
+                    </div>
                     <hr>
                     <form id="signupForm">
                         <!--Form to serialize information-->
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 border-right border-white">
                                 <label>Your Name</label>
                                 <div class="row"></div>
-                                <input type="text" id="memberName" name="membername" class="rounded mb-2" placeholder="John Smith">
+                                <input type="text" id="memberName" name="membername" class="ml-1 rounded shadow-lg mb-2" maxlength="18" placeholder="Ryan Smith">
                                 <div class="row"></div>
                                 <label>Your Number</label>
                                 <div class="row"></div>
-                                <input type="text" id="memberPhone" name="phone" class="rounded mb-2 num" maxlength="15" placeholder="Your Number">
+                                <input type="text" id="memberPhone" name="phone" class="ml-1 rounded shadow-lg mb-2 num" minlength="10" maxlength="13" placeholder="Your Number">
                                 <div class="row"></div>
                                 <label>Your Email</label>
                                 <div class="row"></div>
-                                <input type="text" id="memberEmail" name="email" class="rounded mb-2" placeholder="John@Smith.Com">
+                                <input type="text" id="memberEmail" name="email" class="ml-1 rounded shadow-lg mb-2" placeholder="Ryan@Smith.Com">
                                 <div class="row"></div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 border-left border-white">
                                 <div class="row"></div>
                                 <label>Age</label>
                                 <div class="row"></div>
-                                <input type="text" id="age" name="age" class="rounded mb-2 num" maxlength="3" placeholder="Age">
+                                <input type="text" id="age" name="age" class="ml-1 rounded shadow-lg mb-2 num" maxlength="2" placeholder="Age">
                                 <div class="row"></div>
                                 <label>Nick Name</label>
                                 <div class="row"></div>
-                                <input type="text" name="contactname" class="rounded mb-2" placeholder="Jonny">
+                                <input type="text" id="nickName" name="contactname" class="ml-1 rounded shadow-lg mb-2" placeholder="Jonny">
                                 <div class="row"></div>
                                 <label>Gender</label>
                                 <div class="row"></div>
                                 <input type="radio" value="Male" name="gender" class="ml-2"><label>Male</label>
                                 <input type="radio" value="Female" name="gender" class="ml-2"><label>Female</label>
+                                <div id="endRow" class="row"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-right">
+                                <a href="#" id="submit" class="btn btn-primary border border-dark mb-3">Join Team&nbsp;<i id="checkBox" class="fas fa-check-square"></i></a>
+                                <a href="index.html" class="btn btn-danger mb-3">Cancel</a>
                             </div>
                         </div>
                         <hr>
                         <!--Spacer-->
                         <div id="teamCard" class="card my-2 mx-3 shadow-lg border border-secondary">
-                            <h4 id="teamLeague" class="card-header bg-secondary text-white shadow-sm border-bottom border-dark"></h4>
+                            <h4 id="teamLeague" class="card-header bg-secondary text-white shadow-sm border-bottom border-dark">League</h4>
                             <div class="card-body">
                                 <div class="row">
                                     <div id="bodyContainer" class="col-md-8">
-                                        <h4 id="bodyTop" class="card-text">Hello</h4>
-
+                                        <h4 id="bodyTop" class="card-text">Team Name</h4>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="imgHolderC"></div>
@@ -84,49 +93,33 @@
                         </div>
                         <!---->
                         <div class="row mt-2"></div>
-                        <a href="teamList.html" id="submit" class="btn btn-info mb-3">Join Team</a>
-                        <a href="index.html" class="btn btn-danger mb-3">Cancel</a>
                     </form>
                 </div>
                 <!--Mid section image-->
-                <div class="col-md-3 mt-3">
-                    <div class="imgHolderV banner1 border border-secondary rounded ">
+                <div class="col-md-3 mt-3 mb-5">
+                    <div class="imgHolderV banner1 rounded ">
                     </div>
                 </div>
-                <div class="col-md-4 bg-light rounded">
+                <div class="col-md-4 backColor rounded">
                     <div class="row mt-2"></div>
-                    <div class="mt-5">
-                        <h5>Member List: </h5>
-                        <table class="table table-hover">
+                    <div class="mt-2">
+                        <table class="table table-hover rounded">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">nickName</th>
+                                    <th>MemberList</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
+                            <tbody id="memberData">
                             </tbody>
                         </table>
+                    </div>
+                    <hr>
+                    <div class="mt-4">
+                        <div class="card my-4 mx-3 shadow-lg border border-secondary">
+                            <h4 class="card-header bg-secondary text-white shadow-sm border-bottom border-dark">Members</h4>
+                            <div id="memberCard" class="card-body">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
