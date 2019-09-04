@@ -42,4 +42,4 @@ You can download the required Node.js from [here](https://nodejs.org/en/)
 3. Open up the command prompt and locate where the file is and run it by typing in Node server.s
 
 ### Starting the application
-[Once the server is started, click on me to launch the webstie](https://localhost:8081/index.html);
+[http://localhost:8081/index.html](http://localhost:8081/index.html);
