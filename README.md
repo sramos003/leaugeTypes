@@ -1,8 +1,10 @@
 # leaugeTypes
-Index
+### Index
 ![IndexImg](https://i.imgur.com/lNBQkFC.png)
-Registration
+-----
+### Registration
 ![RegisterImg](https://i.imgur.com/6YfXnXH.png)
+-----
 ### Installation
 ## Technologies
  * HTML / CSS3/ Bootstrap4
