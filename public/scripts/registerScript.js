@@ -1,3 +1,6 @@
+"use strict"
+//Steve Ramos
+//Ready
 $(function() {
     $('#registerTeam').on('click', function(e) {
         e.preventDefault();
@@ -5,6 +8,7 @@ $(function() {
     });
 
     let leagueData;
+    //pulling data from league file
     $.getJSON("/api/leagues", (allLeagueData) => {
         leagueData = allLeagueData
         loadDDL(leagueData);

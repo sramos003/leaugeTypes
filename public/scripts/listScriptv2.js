@@ -1,5 +1,6 @@
 "use strict"
 //Steve Ramos
+//Ready Function
 $(function() {
     $.getJSON("/api/leagues", (data) => {
         $.each(data, function(i) {
@@ -17,14 +18,14 @@ $(function() {
         });
     });
 });
-
+//Loading DDL
 function loadLeaguesDDLData(leagueData) {
     $("#leaguesDDL").append($("<option />")
         .html(leagueData.Name)
         .attr('value', leagueData.Code)
     );
 };
-//search specific league
+//searching for a specific team in the specific league
 function searchData(teamData) {
     let selectedLeague = $('#leaguesDDL').val();
     let selectedGender = $('input[type="radio"]:checked').val();
@@ -39,7 +40,7 @@ function searchData(teamData) {
         };
     };
 };
-
+//Creating outer card template
 function cardTemplate(teamData) {
     //Specific Team Id from data that met specific criteria above
     let id = teamData.TeamId
@@ -57,7 +58,7 @@ function cardTemplate(teamData) {
     );
     cardTemplateSections(teamData, id);
 };
-
+//creating inner card template
 function cardTemplateSections(teamData, id) {
     $(`#tn${id}`).append($('<div />')
         .attr('class', `row ${id}`)
@@ -72,7 +73,7 @@ function cardTemplateSections(teamData, id) {
     );
     cardTemplateData(teamData, id);
 };
-
+//appending template with details
 function cardTemplateData(teamData, id) {
     let maxMembers;
     if (teamData.MaxTeamMembers > 30) {
@@ -108,16 +109,12 @@ function cardTemplateData(teamData, id) {
     );
     $('.imgHolderL').addClass('thumbCard');
 };
-/*Index
- * [1]. Card Shadow on page load, on mouseEnter shadow resized
- * [2]. On cards mouseEnter event, <a />'s Info dynamically generated
- * [3]. Redirect event to bing to the dynaic <a />'s
- */
+//card effects
 function cardEffects(teamData) {
     let id = teamData.TeamId;
     let cardMainDiv = $(`#teamNum${id}`);
     let cardBodyDiv = $(`#tn${id}`);
-    //
+    //spacer
     cardMainDiv.on({
         mouseenter: function() {
             $(this).removeClass('shadow-lg');
