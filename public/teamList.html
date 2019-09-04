@@ -5,19 +5,25 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/site.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <title>Hello, world!</title>
+    <title>eLeague</title>
 </head>
 
 <body class="parallaxReg stadiumTwo">
-    <nav class="navbar sticky-top navbar-dark bg-dark border-bottom border-white">
-        <a class="navbar-brand border-bottom border-white" href="index.html">eLeague</a>
+    <nav class="navbar bg-light navbar-expand-sm mb-5 fixed-top border-bottom border-dark">
+        <a class="navbar-brand text-dark " href="index.html">eLeague<img src="images/navImg.png" alt="trophyImg"> </a>
+        <div class="container offset-9">
+            <ul class="navbar-nav text-dark">
+                <li><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li><a class="nav-link text-dark active" href="teamList.html">List</a></li>
+                <li><a class="nav-link text-dark" href="teamRegister.html">Register</a></li>
+            </ul>
+        </div>
     </nav>
-    <section class="shadow-lg rounded mx-2">
+    <div class="shadow-lg rounded navMargin mx-2">
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -31,21 +37,10 @@
                 <div class="col-md-6 bg-light rounded text-center">
                     <!--Teams Info Section-->
                     <aside id="allInfo">
-                        <div>
-                            <div class="text-center">
-                                <h1 id="headerGreeting"> Lets get started</h1>
-                                <hr>
-                            </div>
-                        </div>
                         <!--previously cardTop v-->
                         <div id="allCards">
-
-
-
-
-
+                            <!--Section cleared and Information populated from info pulled from server-->
                         </div>
-
                     </aside>
                     <!--Team Info Section-->
                 </div>
@@ -66,7 +61,6 @@
                             <div class="row"></div>
                             <select id="leaguesDDL">
                             <option value="ALL">All Leauges</option>
-
 							</select>
                             <hr>
                             <div class="row mt-2"></div>
@@ -75,38 +69,17 @@
                             <input type="radio" value="Any" name="gen" class="ml-2" checked><label>Any</label>
                             <input type="radio" value="Male" name="gen" class="ml-2"><label>Male</label>
                             <input type="radio" value="Female" name="gen" class="ml-2"><label>Female</label>
-                            <hr>
                             <div class="row"></div>
-                            <label>Team Size </label>
-                            <div class="row"></div>
-                            <select id="sizeDDL">
-                                <option value="ALL"> Any</option>
-                                <option value="SM"> Small </option>
-                                <option value="MD"> Medium</option>
-                                <option value="LG"> Large</option>
-                            </select>
                             <hr>
                             <div>
                                 <input type="button" id="search" value="Search" class="btn btn-info ml-3">
                             </div>
-                            <hr>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--     <footer>
-        <div class="text-center minHit">
-            <div>
-                <h6>
-                    Sponsers..
-                </h6>
-                <hr>
-            </div>
-        </div>
-    </footer> -->
-    <!-- Optional JavaScript -->
+    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -114,4 +87,4 @@
     <script src="/scripts/listScriptv2.js"></script>
 </body>
 
-</html>s
+</html>

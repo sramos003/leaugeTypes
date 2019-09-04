@@ -1,13 +1,4 @@
 $(function() {
-    $('#registerSect').hide();
-
-    $('#teamRegister').on('click', function(e) {
-        e.preventDefault();
-        $('#optionSect').hide();
-        $('#registerSect').show();
-        $('body').addClass('parallaxReg stadiumTwo');
-    });
-
     $('#registerTeam').on('click', function(e) {
         e.preventDefault();
         registerTeam();

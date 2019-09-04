@@ -4,9 +4,8 @@ $(function() {
     let teamData;
     loadTeamCard(teamId);
     boxEffects(teamId);
-    submitForm(teamId);
-    boxValidation();
     $('#checkBox').hide();
+    $('#cancelBox').hide();
 });
 
 function loadTeamCard(id) {
@@ -22,9 +21,20 @@ function loadTeamCard(id) {
         );
         cardContainer.append($('<p />')
             .attr('class', ' card-text memNum largePoint')
+            .html(`Max Team Member Age: ${data.MaxMemberAge} y/o`)
+        );
+        cardContainer.append($('<p />')
+            .attr('class', ' card-text memNum largePoint')
             .html(`Number of members: (${data.Members.length})`)
         );
+        cardContainer.append($('<p />')
+            .attr('class', ' card-text memNum largePoint')
+            .html(`Max Team Members: (${data.MaxTeamMembers})`)
+        );
+
         loadMemberCard(data);
+        boxValidation(data);
+        submitForm(id, data);
     });
 };
 
@@ -49,8 +59,8 @@ function boxEffects(id) {
     });
 };
 
-function boxValidation() {
-    //All Texboes on fo
+function boxValidation(data) {
+    //All Texboes on focus
     $('input[type="text"]').on({
         focus: function() {
             $(this).addClass('focusColor');
@@ -80,12 +90,16 @@ function boxValidation() {
         },
         blur: function() {
             let numReg = /^[0-9]*$/;
-
             if (!numReg.test($(this).val()) || $(this).val() < 10 || $(this).val() >= 99) {
                 $(this).addClass('errorRed')
-                $(this).after(`<div id="errorRmv"><small class="text-danger">&nbsp;<i> Please enter a valid age between 10 & 99</i></small></div>`)
+                $(this).after(`<div id="errorRmv"><small class="text-danger">&nbsp;Please enter a valid age between 10 & 99</small></div>`)
                 $(this).val('');
-            }
+            };
+            if (parseInt($(this).val()) > data.MaxMemberAge) {
+                $(this).addClass('errorRed')
+                $(this).after(`<div id="errorRmv"><small class="text-danger">&nbsp;Your age does not meet the requirements for this team</small></div>`)
+                $(this).val('');
+            };
         }
     });
     $('#memberPhone').on({
@@ -128,7 +142,7 @@ function boxValidation() {
     });
 };
 
-function submitForm(id) {
+function submitForm(id, data) {
     $('#submit').on({
         click: function(e) {
             e.preventDefault();
@@ -150,6 +164,22 @@ function submitForm(id) {
             $('#checkBox').hide();
         }
     });
+    $('#cancel').on({
+        mouseenter: function() {
+            $('#cancelBox').show();
+        },
+        mouseleave: function() {
+            $('#cancelBox').hide();
+        }
+    });
+    if (data.TeamGender == "Male") {
+        $('#maleRadio').prop('checked', true);
+        $('#femaleRadio').prop('disabled', true);
+    };
+    if (data.TeamGender == "Female") {
+        $('#femaleRadio').prop('checked', true);
+        $('#maleRadio').prop('disabled', true)
+    };
 };
 
 function loadMemberCard(data) {
@@ -182,7 +212,6 @@ function loadMemberCard(data) {
 };
 
 function defaultMemberCard(data) {
-
     $('#memberCard').empty();
     // console.log(data);
     $('#memberCard').append($('<div />')
@@ -193,11 +222,10 @@ function defaultMemberCard(data) {
         .attr('id', 'leagueCol')
     );
     $('#leagueCol').append($('<div />')
-        .attr('class', 'ml-5 imgHolderC')
+        .attr('class', 'ml-2 imgHolderS border border-dark shadow-lg')
         .attr('id', 'leagueImg')
     );
     let leagueImg = imageSwitch(data.League);
-    console.log(leagueImg);
     $('#leagueImg').addClass(leagueImg);
     $('#memberCard').append($('<p />')
         .attr('class', 'card-text offset-4 largePoint')
@@ -205,15 +233,15 @@ function defaultMemberCard(data) {
     );
     $('#memberCard').append($('<p />')
         .attr('class', 'card-text largePoint')
-        .html(`Name ${data.ManagerName}`)
+        .html(`Name: ${data.ManagerName}`)
     );
     $('#memberCard').append($('<p />')
         .attr('class', 'card-text largePoint')
-        .html(`Email ${data.ManagerEmail}`)
+        .html(`Email: ${data.ManagerEmail}`)
     );
     $('#memberCard').append($('<p />')
         .attr('class', 'card-text largePoint')
-        .html(`Phone Number${data.ManagerPhone}`)
+        .html(`Phone Number: ${data.ManagerPhone}`)
     );
 
 };
@@ -221,10 +249,16 @@ function defaultMemberCard(data) {
 function imageSwitch(league) {
     switch (league) {
         case "LIQ":
-            league = "stadium";
+            league = "liqLogo";
             break;
         case "NRG":
-            league = "second";
+            league = "nrgLogo";
+            break;
+        case "COM":
+            league = "comLogo"
+            break;
+        case "TSM":
+            league = "tsmLogo"
             break;
     };
     return league;
