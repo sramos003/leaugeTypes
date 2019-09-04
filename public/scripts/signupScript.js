@@ -1,3 +1,6 @@
+"use strict"
+//Steve Ramos
+//Ready
 $(function() {
     let url = new URLSearchParams(location.search);
     let teamId = url.get("id");
@@ -7,7 +10,7 @@ $(function() {
     $('#checkBox').hide();
     $('#cancelBox').hide();
 });
-
+//load inital team card data
 function loadTeamCard(id) {
     $.getJSON(`/api/teams/${id}`, (data) => {
         let cardTopHeader = $('#teamLeague');
@@ -37,7 +40,7 @@ function loadTeamCard(id) {
         submitForm(id, data);
     });
 };
-
+//shadow box effect and placeholder value change
 function boxEffects(id) {
     $(`#teamCard`).on({
         mouseenter: function() {
@@ -58,7 +61,7 @@ function boxEffects(id) {
         }
     });
 };
-
+//validates the box on blur event
 function boxValidation(data) {
     //All Texboes on focus
     $('input[type="text"]').on({
@@ -141,7 +144,7 @@ function boxValidation(data) {
         }
     });
 };
-
+//submit registration event
 function submitForm(id, data) {
     $('#submit').on({
         click: function(e) {
@@ -155,7 +158,9 @@ function submitForm(id, data) {
                 $.post(`/api/teams/${id}/members`, $("#signupForm").serialize(), function() {
                     window.location.href = "teamList.html"
                 });
-            };
+            } else {
+                $('#smallOptional').html('<i class="fas fa-times"></i>&nbsp;<i> Please Review the information below and Resubmit</i>')
+            }
         },
         mouseenter: function() {
             $('#checkBox').show();
@@ -245,7 +250,7 @@ function defaultMemberCard(data) {
     );
 
 };
-
+//image switch
 function imageSwitch(league) {
     switch (league) {
         case "LIQ":
