@@ -14,7 +14,6 @@
  * REST API
  * Node.js
 ## Setup
-Clone / Fork / Download Repo then run ```npm install```.
 
 ### Execute the Following in your working dir
 ``` 
