@@ -1,216 +1,237 @@
-[
-	{
-		"TeamId": 1,
-		"TeamName": "Gritty Troopers",
-		"League": "NRG",
-		"ManagerName": "Becky T. Thomas",
-		"ManagerPhone": "860-342-7845",
-		"ManagerEmail": "bTT@NRG.Team.com",
-		"MaxTeamMembers": 4,
-		"MinMemberAge": 0,
-		"MaxMemberAge": 50,
-		"TeamGender": "Any",
-		"Members": [
-			{
-				"MemberId": 1,
-				"Email": "wiaFooTab@gmail.com",
-				"MemberName": "Giovanni Rico",
-				"ContactName": "Gio R.",
-				"Age": 25,
-				"Gender": "Male",
-				"Phone": "860-115-8146"
-			},
-			{
-				"MemberId": 2,
-				"Email": "RotamcLiv@gmail.com",
-				"MemberName": "Antoni Balbus",
-				"ContactName": "Balbo",
-				"Age": 27,
-				"Gender": "Male",
-				"Phone": "212-452-9874"
-			},
-			{
-				"MemberId": 3,
-				"Email": "Roberts544@hotmail.com",
-				"MemberName": "Mia T. Roberts",
-				"ContactName": "M.Roberts",
-				"Age": 35,
-				"Gender": "Female",
-				"Phone": "860-425-8174"
-			},
-			{
-				"MemberId": 106,
-				"Email": "rsteve910@gmail.com",
-				"MemberName": "Steven",
-				"ContactName": "gvujyhv",
-				"Age": 25,
-				"Gender": "Male",
-				"Phone": "841-123-1234"
-			},
-			{
-				"MemberId": 108,
-				"Email": "rsteve910@gmail.com",
-				"MemberName": "Steven",
-				"ContactName": "gvujyhv",
-				"Age": 45,
-				"Gender": "Male",
-				"Phone": "810-123-4561"
-			},
-			{
-				"MemberId": 109,
-				"Email": "rsteve910@gmail.com",
-				"MemberName": "Steven",
-				"ContactName": "gvujyhv",
-				"Age": 45,
-				"Gender": "Male",
-				"Phone": "810-123-4561"
-			}
-		]
-	},
-	{
-		"TeamId": 2,
-		"TeamName": "Instant Street Porcupines",
-		"League": "TSM",
-		"ManagerName": "Natalie Plyers",
-		"ManagerPhone": "817-555-5454",
-		"ManagerEmail": "Natalie214@aol.com",
-		"MinAge": 0,
-		"MaxAge": 50,
-		"MaxTeamMembers": 6,
-		"TeamGender": "Any",
-		"Members": [
-			{
-				"MemberId": 4,
-				"Email": "Natalie214@aol.com",
-				"MemberName": "Elisha Plyers",
-				"ContactName": "Natalie Plyers",
-				"Age": 10,
-				"Gender": "Male",
-				"Phone": "817-555-5454"
-			},
-			{
-				"MemberId": 5,
-				"Email": "Natalie214@aol.com",
-				"MemberName": "Ezra Plyers",
-				"ContactName": "Natalie Plyers",
-				"Age": 15,
-				"Gender": "Male",
-				"Phone": "817-555-5454"
-			}
-		]
-	},
-	{
-		"TeamId": 110,
-		"TeamName": "The AAAAAAAAAA",
-		"League": "TSM",
-		"ManagerName": "AAAAAAAAAA",
-		"ManagerPhone": "810-451-8475",
-		"ManagerEmail": "s@gmail.com",
-		"MaxTeamMembers": 20,
-		"MinMemberAge": 16,
-		"MaxMemberAge": 45,
-		"TeamGender": "Male",
-		"Members": []
-	},
-	{
-		"TeamId": 112,
-		"TeamName": "The Stevens",
-		"League": "TSM",
-		"ManagerName": "Steven",
-		"ManagerPhone": "810-451-8475",
-		"ManagerEmail": "Steven@Gmail.com",
-		"MaxTeamMembers": 20,
-		"MinMemberAge": 16,
-		"MaxMemberAge": 45,
-		"TeamGender": "Female",
-		"Members": [
-			{
-				"MemberId": 101,
-				"Email": "rsteve910@gmail.com",
-				"MemberName": "Steven",
-				"ContactName": "Steveo",
-				"Age": 23,
-				"Gender": "Female",
-				"Phone": "860-936-8496"
-			}
-		]
-	},
-	{
-		"TeamId": 113,
-		"TeamName": "The Striking Vipers",
-		"League": "COM",
-		"ManagerName": "Nghia Vu",
-		"ManagerPhone": "11114444444",
-		"ManagerEmail": "2123@Gmail.com",
-		"MaxTeamMembers": 20,
-		"MinMemberAge": 16,
-		"MaxMemberAge": 31,
-		"TeamGender": "Any",
-		"Members": []
-	},
-	{
-		"TeamId": 117,
-		"TeamName": "The Ox Team",
-		"League": "LIQ",
-		"ManagerName": "Steve Ramos",
-		"ManagerPhone": "810-452-1545",
-		"ManagerEmail": "rSteve910@gmail.com",
-		"MaxTeamMembers": 20,
-		"MinMemberAge": 156,
-		"MaxMemberAge": 100,
-		"TeamGender": "Any",
-		"Members": []
-	},
-	{
-		"TeamId": 118,
-		"TeamName": "The Hashiras",
-		"League": "NRG",
-		"ManagerName": "Tony Stark",
-		"ManagerPhone": "860-967-5778",
-		"ManagerEmail": "rsteve910@gmail.com",
-		"MaxTeamMembers": 300,
-		"MinMemberAge": 20,
-		"MaxMemberAge": 25,
-		"TeamGender": "Any",
-		"Members": []
-	},
-	{
-		"TeamId": 119,
-		"TeamName": "Tomioka",
-		"League": "LIQ",
-		"ManagerName": "Hashira-Kun",
-		"ManagerPhone": "860-923-1234",
-		"ManagerEmail": "Rsteve910@gmail.com",
-		"MaxTeamMembers": 12,
-		"MinMemberAge": 12,
-		"MaxMemberAge": 12,
-		"TeamGender": "Any",
-		"Members": []
-	},
-	{
-		"TeamId": 120,
-		"TeamName": "The Omars",
-		"League": "NRG",
-		"ManagerName": "Omar",
-		"ManagerPhone": "860-967-5778",
-		"ManagerEmail": "rsteve910@gmail.com",
-		"MaxTeamMembers": 10,
-		"MinMemberAge": 10,
-		"MaxMemberAge": 10,
-		"TeamGender": "Any",
-		"Members": []
-	},
-	{
-		"TeamId": 121,
-		"TeamName": "The Jackelines",
-		"League": "COM",
-		"ManagerName": "Jackeline",
-		"ManagerPhone": "860-123-1234",
-		"ManagerEmail": "rsteve910@gmail.com",
-		"MaxTeamMembers": 20,
-		"MinMemberAge": 20,
-		"MaxMemberAge": 20,
-		"TeamGender": "Female",
-		"Members": []
-	}
+[{
+        "TeamId": 1,
+        "TeamName": "Gritty Troopers",
+        "League": "NRG",
+        "ManagerName": "Becky T. Thomas",
+        "ManagerPhone": "860-342-7845",
+        "ManagerEmail": "bTT@NRG.Team.com",
+        "MaxTeamMembers": 4,
+        "MinMemberAge": 0,
+        "MaxMemberAge": 50,
+        "TeamGender": "Any",
+        "Members": [{
+                "MemberId": 1,
+                "Email": "wiaFooTab@gmail.com",
+                "MemberName": "Giovanni Rico",
+                "ContactName": "Gio R.",
+                "Age": 25,
+                "Gender": "Male",
+                "Phone": "860-115-8146"
+            },
+            {
+                "MemberId": 2,
+                "Email": "RotamcLiv@gmail.com",
+                "MemberName": "Antoni Balbus",
+                "ContactName": "Balbo",
+                "Age": 27,
+                "Gender": "Male",
+                "Phone": "212-452-9874"
+            },
+            {
+                "MemberId": 3,
+                "Email": "Roberts544@hotmail.com",
+                "MemberName": "Mia T. Roberts",
+                "ContactName": "M.Roberts",
+                "Age": 35,
+                "Gender": "Female",
+                "Phone": "860-425-8174"
+            },
+            {
+                "MemberId": 106,
+                "Email": "rsteve910@gmail.com",
+                "MemberName": "Steven",
+                "ContactName": "gvujyhv",
+                "Age": 25,
+                "Gender": "Male",
+                "Phone": "841-123-1234"
+            },
+            {
+                "MemberId": 108,
+                "Email": "rsteve910@gmail.com",
+                "MemberName": "Steven",
+                "ContactName": "gvujyhv",
+                "Age": 45,
+                "Gender": "Male",
+                "Phone": "810-123-4561"
+            },
+            {
+                "MemberId": 109,
+                "Email": "rsteve910@gmail.com",
+                "MemberName": "Steven",
+                "ContactName": "gvujyhv",
+                "Age": 45,
+                "Gender": "Male",
+                "Phone": "810-123-4561"
+            }
+        ]
+    },
+    {
+        "TeamId": 2,
+        "TeamName": "Instant Street Porcupines",
+        "League": "TSM",
+        "ManagerName": "Natalie Plyers",
+        "ManagerPhone": "817-555-5454",
+        "ManagerEmail": "Natalie214@aol.com",
+        "MinAge": 0,
+        "MaxMemberAge": 50,
+        "MaxTeamMembers": 6,
+        "TeamGender": "Any",
+        "Members": [{
+                "MemberId": 4,
+                "Email": "Natalie214@aol.com",
+                "MemberName": "Elisha Plyers",
+                "ContactName": "Natalie Plyers",
+                "Age": 10,
+                "Gender": "Male",
+                "Phone": "817-555-5454"
+            },
+            {
+                "MemberId": 5,
+                "Email": "Natalie214@aol.com",
+                "MemberName": "Ezra Plyers",
+                "ContactName": "Natalie Plyers",
+                "Age": 15,
+                "Gender": "Male",
+                "Phone": "817-555-5454"
+            }
+        ]
+    },
+    {
+        "TeamId": 110,
+        "TeamName": "The AAAAAAAAAA",
+        "League": "TSM",
+        "ManagerName": "AAAAAAAAAA",
+        "ManagerPhone": "810-451-8475",
+        "ManagerEmail": "s@gmail.com",
+        "MaxTeamMembers": 20,
+        "MinMemberAge": 16,
+        "MaxMemberAge": 45,
+        "TeamGender": "Male",
+        "Members": []
+    },
+    {
+        "TeamId": 112,
+        "TeamName": "The Stevens",
+        "League": "TSM",
+        "ManagerName": "Steven",
+        "ManagerPhone": "810-451-8475",
+        "ManagerEmail": "Steven@Gmail.com",
+        "MaxTeamMembers": 20,
+        "MinMemberAge": 16,
+        "MaxMemberAge": 45,
+        "TeamGender": "Female",
+        "Members": [{
+            "MemberId": 101,
+            "Email": "rsteve910@gmail.com",
+            "MemberName": "Steven",
+            "ContactName": "Steveo",
+            "Age": 23,
+            "Gender": "Female",
+            "Phone": "860-936-8496"
+        }]
+    },
+    {
+        "TeamId": 113,
+        "TeamName": "The Striking Vipers",
+        "League": "COM",
+        "ManagerName": "Nghia Vu",
+        "ManagerPhone": "11114444444",
+        "ManagerEmail": "2123@Gmail.com",
+        "MaxTeamMembers": 20,
+        "MinMemberAge": 16,
+        "MaxMemberAge": 31,
+        "TeamGender": "Any",
+        "Members": []
+    },
+    {
+        "TeamId": 117,
+        "TeamName": "The Ox Team",
+        "League": "LIQ",
+        "ManagerName": "Steve Ramos",
+        "ManagerPhone": "810-452-1545",
+        "ManagerEmail": "rSteve910@gmail.com",
+        "MaxTeamMembers": 20,
+        "MinMemberAge": 156,
+        "MaxMemberAge": 100,
+        "TeamGender": "Any",
+        "Members": []
+    },
+    {
+        "TeamId": 118,
+        "TeamName": "The Hashiras",
+        "League": "NRG",
+        "ManagerName": "Tony Stark",
+        "ManagerPhone": "860-967-5778",
+        "ManagerEmail": "rsteve910@gmail.com",
+        "MaxTeamMembers": 300,
+        "MinMemberAge": 20,
+        "MaxMemberAge": 25,
+        "TeamGender": "Any",
+        "Members": []
+    },
+    {
+        "TeamId": 119,
+        "TeamName": "Tomioka",
+        "League": "LIQ",
+        "ManagerName": "Hashira-Kun",
+        "ManagerPhone": "860-923-1234",
+        "ManagerEmail": "Rsteve910@gmail.com",
+        "MaxTeamMembers": 12,
+        "MinMemberAge": 12,
+        "MaxMemberAge": 12,
+        "TeamGender": "Any",
+        "Members": []
+    },
+    {
+        "TeamId": 120,
+        "TeamName": "The Omars",
+        "League": "NRG",
+        "ManagerName": "Omar",
+        "ManagerPhone": "860-967-5778",
+        "ManagerEmail": "rsteve910@gmail.com",
+        "MaxTeamMembers": 10,
+        "MinMemberAge": 10,
+        "MaxMemberAge": 10,
+        "TeamGender": "Any",
+        "Members": []
+    },
+    {
+        "TeamId": 121,
+        "TeamName": "The Jackelines",
+        "League": "COM",
+        "ManagerName": "Jackeline",
+        "ManagerPhone": "860-123-1234",
+        "ManagerEmail": "rsteve910@gmail.com",
+        "MaxTeamMembers": 20,
+        "MinMemberAge": 20,
+        "MaxMemberAge": 20,
+        "TeamGender": "Female",
+        "Members": []
+    },
+    {
+        "TeamId": 122,
+        "TeamName": "Tomioka",
+        "League": "TSM",
+        "ManagerName": "Tony Stark",
+        "ManagerPhone": "860-967-5778",
+        "ManagerEmail": "rsteve910@gmail.com",
+        "MaxTeamMembers": 12,
+        "MinMemberAge": 12,
+        "MaxMemberAge": 10,
+        "TeamGender": "Any",
+        "Members": []
+    },
+    {
+        "TeamId": 123,
+        "TeamName": "Tomioka-2",
+        "League": "TSM",
+        "ManagerName": "Tony Stark",
+        "ManagerPhone": "860-967-5778",
+        "ManagerEmail": "rsteve910@gmail.com",
+        "MaxTeamMembers": 12,
+        "MinMemberAge": 12,
+        "MaxMemberAge": 10,
+        "TeamGender": "Any",
+        "Members": []
+    }
 ]

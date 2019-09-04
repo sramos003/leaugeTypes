@@ -7,10 +7,11 @@ $(function() {
         });
     });
     $.getJSON("/api/teams", (data) => {
+        $('#search').on('click', () => {
+            $('#allCards').empty();
+            searchData(data);
+        });
         $.each(data, function(i) {
-            $('#search').on('click', () => {
-                searchData(data[i]);
-            });
             cardTemplate(data[i]);
             cardEffects(data[i]);
         });
@@ -23,43 +24,19 @@ function loadLeaguesDDLData(leagueData) {
         .attr('value', leagueData.Code)
     );
 };
-
-function loadTeamsData(teamData) {
-    cardTemplate(teamData);
-    cardEffects(teamData);
-};
-//search specific league?
+//search specific league
 function searchData(teamData) {
-    // $('#allCards').empty();
     let selectedLeague = $('#leaguesDDL').val();
     let selectedGender = $('input[type="radio"]:checked').val();
-    switch ($('#sizeDDL').val()) {
-        case "ALL":
-            if (selectedLeague == teamData.League && selectedGender == teamData.TeamGender) {
-                cardTemplate(teamData);
-                cardEffects(teamData);
-            };
-            break;
-        case "SM":
-            if (selectedLeague == teamData.League && selectedGender == teamData.TeamGender && teamData.MaxTeamMembers < 20) {
-                cardTemplate(teamData);
-                cardEffects(teamData);
-            };
-            break;
-        case "MD":
-            if (selectedLeague == teamData.League && selectedGender == teamData.TeamGender && teamData.MaxTeamMembers >= 20 && teamData.MaxTeamMembers < 30) {
-                cardTemplate(teamData);
-                cardEffects(teamData);
-            };
-            break;
-        case "LG":
-            if (selectedLeague == teamData.League && selectedGender == teamData.TeamGender && teamData.MaxTeamMembers >= 30) {
-                cardTemplate(teamData);
-                cardEffects(teamData);
-            };
-            break;
-        default:
-            console.log("Something went wrong when evaluating sizeDDL's value");
+    for (let i = 0; i < teamData.length; i++) {
+        if (selectedLeague == teamData[i].League && selectedGender == teamData[i].TeamGender) {
+            cardTemplate(teamData[i]);
+            cardEffects(teamData[i]);
+        };
+        if (selectedLeague == "ALL" && selectedGender == teamData[i].TeamGender) {
+            cardTemplate(teamData[i]);
+            cardEffects(teamData[i]);
+        };
     };
 };
 
@@ -97,7 +74,6 @@ function cardTemplateSections(teamData, id) {
 };
 
 function cardTemplateData(teamData, id) {
-    //
     let maxMembers;
     if (teamData.MaxTeamMembers > 30) {
         maxMembers = "30+"
@@ -127,23 +103,10 @@ function cardTemplateData(teamData, id) {
     );
     //img
     let imgField = $(`#img${id}`)
-    let leagueImg = imageSwitch(teamData.League);
     imgField.append($('<div />')
-        .attr('class', 'imgHolderC')
+        .attr('class', 'imgHolderL')
     );
-    $('.imgHolderC').addClass(leagueImg);
-};
-
-function imageSwitch(league) {
-    switch (league) {
-        case "LIQ":
-            league = "stadium";
-            break;
-        case "NRG":
-            league = "second";
-            break;
-    };
-    return league;
+    $('.imgHolderL').addClass('thumbCard');
 };
 /*Index
  * [1]. Card Shadow on page load, on mouseEnter shadow resized
@@ -172,26 +135,16 @@ function cardEffects(teamData) {
             );
             $(this).append($('<a />')
                 .attr('id', `info${id}`)
-                .attr('class', 'btn btn-primary text-white border hidden border-mute')
-                .html('View League Info')
-                .on('click', function() {
-                    // getTeamInfo(data, id)
-                })
-            );
-            $(this).append($('<a />')
-                .attr('id', `join${id}`)
-                .attr('class', 'mx-2 btn btn-info text-white hidden border border-mute')
-                .html('Join')
+                .attr('class', 'btn btn-danger text-white border hidden border-mute')
+                .html('View League Info or register')
                 .on('click', function() {
                     window.location.href = `teamSignup.html?id=${id}`
                 })
             );
-            $(`#info${id}`).fadeIn(300);
-            $(`#join${id}`).fadeIn(300);
+            $(`#info${id}`).fadeIn(150);
         },
         mouseleave: function() {
             $(`#info${id}`).remove();
-            $(`#join${id}`).remove();
             $(`#divider${id}`).remove();
         }
     });
