@@ -32,7 +32,7 @@
 ```
 ### Test App (Browser)
 + Ensure Node Server is started! 
-1. Download the zipped file from [sramos003.github](https://github.com/sramos003/leaugeTypes) ![Download Image](https://i.imgur.com/SNztSOg.png)
+1. Download the zipped file from [sramos003.github](https://github.com/sramos003/leaugeTypes/archive/master.zip) ![Download Image](https://i.imgur.com/SNztSOg.png)
 
 2. Locate the directory where the file was downloaded to and unzip the file,
 
