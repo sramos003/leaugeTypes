@@ -1,4 +1,11 @@
 # leaugeTypes
+
+# Images!
+Index
+![IndexImg](https://i.imgur.com/lNBQkFC.png)
+Registration
+![RegisterImg](https://i.imgur.com/6YfXnXH.png)
+### Installation
 ## Technologies
  * HTML / CSS3/ Bootstrap4
  * JavaScript
@@ -26,12 +33,6 @@ Clone / Fork / Download Repo then run ```npm install```.
 ```
 ### Test App (Browser)
 + Ensure Node Server is started! 
-# Images!
-Index
-![IndexImg](https://i.imgur.com/lNBQkFC.png)
-Registration
-![RegisterImg](https://i.imgur.com/6YfXnXH.png)
-### Installation
 1. Download the zipped file from [sramos003.github](https://github.com/sramos003/leaugeTypes) ![Download Image](https://i.imgur.com/SNztSOg.png)
 
 2. Locate the directory where the file was downloaded to and unzip the file,
