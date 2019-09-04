@@ -1,6 +1,4 @@
 # leaugeTypes
-
-# Images!
 Index
 ![IndexImg](https://i.imgur.com/lNBQkFC.png)
 Registration
