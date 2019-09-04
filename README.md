@@ -2,11 +2,11 @@
 
 # Images!
 Index
-![IndexImg](leaugeTypes\public\images\indexImg.png)
+![IndexImg](https://i.imgur.com/lNBQkFC.png)
 Registration
-![RegisterImg](leaugeTypes\public\images\regImg.png)
+![RegisterImg](https://i.imgur.com/6YfXnXH.png)
 ### Installation
-1. Download the zipped file from [sramos003.github](https://github.com/sramos003/leaugeTypes) ![Download Image](leaugeTypes\public\images\downloadGit.png)
+1. Download the zipped file from [sramos003.github](https://github.com/sramos003/leaugeTypes) ![Download Image](https://i.imgur.com/SNztSOg.png)
 
 2. Locate the directory where the file was downloaded to and unzip the file,
 
