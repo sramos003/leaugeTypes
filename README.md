@@ -1,5 +1,31 @@
 # leaugeTypes
+## Technologies
+ * HTML / CSS3/ Bootstrap4
+ * JavaScript
+ * jQuery
+ * AJAX
+ * REST API
+ * Node.js
+## Setup
+Clone / Fork / Download Repo then run ```npm install```.
 
+### Execute the Following in your working dir
+``` 
+# npm install express --save
+# npm install body-parser --save
+# npm install multer --save
+```
+
+### To Start/Stop a Specific Node Process
+```
+# To start server
+  node server.js
+
+# To stop server
+  Ctrl + C
+```
+### Test App (Browser)
++ Ensure Node Server is started! 
 # Images!
 Index
 ![IndexImg](https://i.imgur.com/lNBQkFC.png)
